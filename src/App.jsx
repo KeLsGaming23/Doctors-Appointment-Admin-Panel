@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AdminContext } from './context/AdminContext';
 import Navbar from './components/Navbar';
+import SideBar from './components/SideBar';
 
 const App = () => {
   const {aToken} = useContext(AdminContext)
@@ -12,6 +13,9 @@ const App = () => {
       
       <ToastContainer />
       <Navbar />
+      <div className='flex items-start'>
+        <SideBar />
+      </div>
     </div>
   ) : (
     <>
