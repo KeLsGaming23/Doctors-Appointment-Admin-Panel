@@ -4,7 +4,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AdminContext } from './context/AdminContext';
 import Navbar from './components/Navbar';
-import SideBar from './components/SideBar';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/Admin/Dashboard';
 import AllAppointments from './pages/Admin/AllAppointments';
@@ -14,6 +13,7 @@ import { DoctorContext } from './context/DoctorContext';
 import DoctorDashboard from './pages/Doctor/DoctorDashboard';
 import DoctorAppointment from './pages/Doctor/DoctorAppointment';
 import DoctorProfile from './pages/Doctor/DoctorProfile';
+import SideBar from './components/Sidebar';
 
 
 const App = () => {
